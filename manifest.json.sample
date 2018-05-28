@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Rainbow Sharing",
+    "description": "Rainbow HD Sharing (screens and applications)",
+    "version": "<version>",
+    "author": "<contributors>",
+
+    "browser_action": {
+      "default_icon": "rainbow_128.png"
+    },
+
+    "icons": {
+        "16": "rainbow_16.png",
+        "48": "rainbow_48.png",
+        "128": "rainbow_128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "desktopCapture", "<add here all your domains from where the Rainbow SDK for web library is used>"
+    ],
+
+    "externally_connectable": {
+        "matches": ["<add here all your domains from where the Rainbow SDK for web library is used>"]
+    },
+
+    "web_accessible_resources": ["rainbow_128.png"]
+}
